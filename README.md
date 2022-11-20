@@ -56,7 +56,9 @@ I2C address pin A0A1A2A3A4A5 = 000000
 |-------|-----------------------------------    |-----------|
 |RJ11   |Servo, I2C, ANA_line, Ultra_sound      |6P6 and 6P4|
 |Domino |Output Supply power anh control Motor  |2.54mm     |
-|jack DC|Input Supply power board and Peripheral|12VDC      |
-|type-C |USB code                               |           |
+|Jack DC|Input Supply power board and Peripheral|12VDC      |
+|USB type-C |USB to UART bridge for Serial 
+
+            and Flashing|           |
 
 
