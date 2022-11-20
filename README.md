@@ -58,7 +58,6 @@ I2C address pin A0A1A2A3A4A5 = 000000
 |Domino |Output Supply power anh control Motor  |2.54mm     |
 |Jack DC|Input Supply power board and Peripheral|12VDC      |
 |USB type-C |USB to UART bridge for Serial 
-
-            and Flashing|           |
+and Flashing|           |
 
 
