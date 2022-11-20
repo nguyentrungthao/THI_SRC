@@ -6,7 +6,7 @@ This project contain code test board THI_SCR in inventhub link: https://inventhu
 - Input: 12VDC 
 - Output: 
     + M1, M2: 12VDC
-    + Servor 1->6: 5VDC
+    + Servor x6: 5VDC
     + I2C: 3.3VDC
     + Analog line: 3.3VDC
     + Ultra sound: 5VDC
