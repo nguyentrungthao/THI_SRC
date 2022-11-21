@@ -1,7 +1,8 @@
 # THI_SRC
-# Overview
-This project contain code test board THI_SCR in inventhub link: https://inventhub.io/c/TrungThao1412/THI_SRC/tree/default
+## Overview
 
+## Hardware design
+Hardware design can be found at Inventhub link: https://inventhub.io/c/TrungThao1412/THI_SRC/tree/default
 ## Power 
 - Input: 12VDC 
 - Output: 
@@ -10,13 +11,14 @@ This project contain code test board THI_SCR in inventhub link: https://inventhu
     + I2C: 3.3V 
     + Analog line: 3.3VDC QTR-5RC(link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl)
     + Ultra sound: 5VDC HC-SR04(link: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am)
-## Onboard Peripheral 
+## Onboard Component 
 |Block                                  |Component  |
 |---------------------------------------|-----------|
 |Buzzer                                 |KLJ-7525   |
 |Output PWM expander,I2C conmunicate    |PCA9685    |
 |H-Bridge                               |TB6612     |
 |USB to UART                            |CP1202     |
+|UserButton                             |            |
 
 ## ESP32 pin assignment
 |GPIO       |Function       |
