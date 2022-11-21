@@ -3,25 +3,24 @@
 
 ## Hardware design
 Hardware design can be found at Inventhub link: https://inventhub.io/c/TrungThao1412/THI_SRC/tree/default
-## Power 
-- Input: 12VDC 
+## Input and Output 
+- Input:  
+    - Jack DC power: 12V
+    - USB-C power: 5V
+    - UserButton.
+    - 4 analog lines to ESP32
+    - ECHO pin of Ultrasonic sensor
 - Output: 
-    + M1, M2: 12VDC
-    + Servor x6: 5VDC
-    + I2C: 3.3V 
-    + Analog line: 3.3VDC QTR-5RC(link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl)
-    + Ultra sound: 5VDC HC-SR04(link: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am)
-## Onboard Component 
-|Block                                  |Component  |
-|---------------------------------------|-----------|
-|Buzzer                                 |KLJ-7525   |
-|Output PWM expander,I2C conmunicate    |PCA9685    |
-|H-Bridge                               |TB6612     |
-|USB to UART                            |CP1202     |
-|UserButton                             |            |
+    - 2 Motor output M1, M2.
+    - 6 output of servo motors
+    - Matrix LED
+    - TRIG pin of Ultrasonic sensor
+    - TX, RX red LED
+    - 12V red LED indicating
+    - 5V red LED indicating
 
 ## ESP32 pin assignment
-|GPIO       |Function       |
+|GPIO       |Assignment     |
 |-----------|---------------|
 |IO23       |PWMA - TB6612  |
 |IO22       |PWMB - TB6612  |
@@ -40,28 +39,15 @@ Hardware design can be found at Inventhub link: https://inventhub.io/c/TrungThao
 |IO13       |MOSI           |
 |IO15       |CS             |
 |IO14       |SCK            |
-
-## PCA pin assignment 
-I2C address pin A0A1A2A3A4A5 = 000000
-|PIN        |Connected      |
-|-----------|---------------|
-|LED0       |Servo 1        |
-|LED1       |Servo 2        |
-|LED2       |Servo 3        |
-|LED3       |Servo 4        |
-|LED4       |Servo 5        |
-|LED5       |Servo 6        |
-
-
 ## Connector 
-|Type       |Function                               |Decription                     |
-|-----------|---------------------------------------|-----------                    |
-|RJ11 6P6   |ANA_line                               |1:GND; 2-5:ANA4-ANA1; 6:5VDC   |
-|RJ11 6P4 x6|Servo                                  |1:GND; 2:5VDC; 3:PWM;  4:NC    |
-|RJ11 6P4   |I2C                                    |1:GND; 2:SDA;  3:SCL;  4:3.3V  |
-|RJ11 6P4   |Ultra sound                            |1:GND; 2:ECHO; 3:TRIG; 4:5V    |
-|Domino     |Output Supply power anh control Motor  |2.54mm 2pin                    |
-|jack DC    |Input Supply power board and Peripheral|12VDC                          |
-|USB type-C |USB code                               |                               |
+|Type           |Function                               |Decription                     |
+|-----------    |---------------------------------------|-----------                    |
+|RJ11 6P6       |ANALOG_lines                           |1:GND; 2-5:ANA4-ANA1; 6:5VDC   |
+|RJ11 6P4 x6    |Servo                                  |1:GND; 2:5VDC; 3:PWM;  4:NC    |
+|RJ11 6P4       |I2C port output                        |1:GND; 2:SDA;  3:SCL;  4:3.3V  |
+|RJ11 6P4       |Ultrasonic sensor port                 |1:GND; 2:ECHO; 3:TRIG; 4:5V    |
+|Jack DC        |Input Power supply                     |12VDC                          |
+|USB type-C     |5V power supply and communication with PC                               |                               |
+|Arduino pins   |
 
 

@@ -1,7 +1,7 @@
 # Test driver PCA9685
-Thư viện cần include thêm để có thể sử dụng có thể tìm ở link sau https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
+Link thư viện cần include : https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
 
-Mặc định chân I2C được sử dụng trên ESP32 là 22,23. Trên mạch chân I2C được sử dụng là 18,19. Vì vậy cần phải mapping chân, sử dụng khung code sau:
+Mặc định chân I2C được sử dụng trên ESP32 là 22, 23. Trên mạch chân I2C được sử dụng là 18, 19. Vì vậy cần phải mapping chân, sử dụng khung code sau:
 
 ```
 #include "Wire.h"
