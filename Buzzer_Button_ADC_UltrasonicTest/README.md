@@ -9,3 +9,6 @@ In giá trị đo được từ 4 chân analog lên Serial
 
 Nhấn nút UserButton để test mức logic đọc về ESP32 và gửi lên Serial
 
+# Hướng dẫn
+Nạp code và bật Serial ở baud 115200
+
