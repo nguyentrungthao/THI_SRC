@@ -36,12 +36,29 @@ void TestEN12()
 }
 void TestTB6612Output()
 {
+  analogWrite(EN1,200);
+  analogWrite(EN2,50);
   digitalWrite(IN1,1);
   digitalWrite(IN2,0);
   digitalWrite(IN3,1);
   digitalWrite(IN4,0);
-  analogWrite(EN1,200);
-  analogWrite(EN2,50);
+  delay(1000);
+  digitalWrite(IN1,1);
+  digitalWrite(IN2,1);
+  digitalWrite(IN3,1);
+  digitalWrite(IN4,1);
+  delay(1000);
+  digitalWrite(IN1,0);
+  digitalWrite(IN2,1);
+  digitalWrite(IN3,0);
+  digitalWrite(IN4,1);
+  delay(1000);
+  digitalWrite(IN1,0);
+  digitalWrite(IN2,0);
+  digitalWrite(IN3,0);
+  digitalWrite(IN4,2);
+  delay(1000);
+  
 }
 void loop() {
   // put your main code here, to run repeatedly:
