@@ -38,6 +38,8 @@ This project contain code test board THI_SCR in inventhub link: https://inventhu
 |IO13       |MOSI           |
 |IO15       |CS             |
 |IO14       |SCK            |
+|IO32       |TRIG           |
+|IO33       |ECHO           |
 
 ## PCA pin assignment 
 I2C address pin A0A1A2A3A4A5 = 000000
