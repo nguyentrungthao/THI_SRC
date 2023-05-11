@@ -11,6 +11,7 @@ This project contain code test board THI_SCR in inventhub link: https://inventhu
     + Analog line: 3.3VDC QTR-5RC(link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl)
     + Ultra sound: 5VDC HC-SR04(link: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am)
 ## Onboard Peripheral 
+table
 |Block                                  |Component  |
 |---------------------------------------|-----------|
 |Buzzer                                 |KLJ-7525   |
